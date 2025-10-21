@@ -122,7 +122,7 @@ public class Main {
         message = new EncryptedMessage(message);
         System.out.println("Після шифрування: " + message.getContent());
 
-        System.out.println("\n--- Інший порядок обробки ---");
+        System.out.println("\n Інший порядок обробки ");
 
         // Інший порядок: спочатку шифрування, потім автор
         Message message2 = new BasicMessage("Secret information");
@@ -134,7 +134,7 @@ public class Main {
         message2 = new AuthorMessage(message2, "Kostenko Dmytro");
         System.out.println("Додаємо автора: " + message2.getContent());
 
-        System.out.println("\n--- Всі обробки разом ---");
+        System.out.println("\n Всі обробки разом ");
         Message message3 = new BasicMessage("Final   example  text");
         message3 = new CompressedMessage(message3);
         message3 = new TimestampMessage(message3);
